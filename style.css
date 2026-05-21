@@ -347,18 +347,47 @@ footer {
 
 @media (max-width: 850px) {
     .nav {
-        align-items: flex-start;
-        padding: 18px 22px;
+        position: sticky;
+        top: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+        padding: 16px 20px;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        font-size: 23px;
     }
 
     .nav-links {
-        flex-direction: column;
-        align-items: flex-end;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 10px;
+        width: 100%;
+    }
+
+    .nav-links a {
+        margin: 0;
+        padding: 11px 12px;
+        text-align: center;
+        font-size: 14px;
+        background: #f6faf8;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+    }
+
+    .nav-links .nav-cta {
+        grid-column: 1 / -1;
+        padding: 13px 16px;
+        color: #ffffff !important;
+        background: var(--brand);
+        border-color: var(--brand);
     }
 
     .hero {
-        padding: 88px 24px 56px;
+        padding: 72px 24px 56px;
     }
 
     .sub {
@@ -384,31 +413,5 @@ footer {
     footer {
         flex-direction: column;
         padding: 30px 24px;
-    }
-}
-
-@media (max-width: 560px) {
-    .nav {
-        position: static;
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .nav-links {
-        align-items: flex-start;
-    }
-
-    .hero-actions,
-    .button {
-        width: 100%;
-    }
-
-    .card {
-        padding: 26px;
-    }
-
-    .cta {
-        margin: 80px 24px;
-        padding: 46px 24px;
     }
 }
