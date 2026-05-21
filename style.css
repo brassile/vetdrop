@@ -201,8 +201,12 @@ h3 {
 
 .section {
     max-width: 1180px;
-    margin: 96px auto;
+    margin: 64px auto;
     padding: 0 32px;
+}
+
+section {
+    scroll-margin-top: 130px;
 }
 
 .section-heading {
@@ -307,7 +311,7 @@ h3 {
 
 .cta {
     max-width: 960px;
-    margin: 110px auto;
+    margin: 70px auto;
     padding: 70px 32px;
     text-align: center;
     background:
@@ -346,6 +350,10 @@ footer {
 }
 
 @media (max-width: 850px) {
+    section {
+        scroll-margin-top: 115px;
+    }
+
     .nav {
         position: sticky;
         top: 0;
@@ -410,7 +418,7 @@ footer {
     }
 
     .section {
-        margin: 68px auto;
+        margin: 48px auto;
         padding: 0 22px;
     }
 
