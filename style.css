@@ -427,34 +427,4 @@ footer {
     h1 {
         font-size: 42px;
         letter-spacing: -0.055em;
-    }
-
-    .sub {
-        font-size: 18px;
-    }
-
-    .cards,
-    .split,
-    .notice {
-        grid-template-columns: 1fr;
-    }
-
-    .section {
-        margin: 48px auto;
-        padding: 0 22px;
-    }
-
-    .split,
-    .notice {
-        padding: 30px 22px;
-    }
-
-    footer {
-        flex-direction: column;
-        padding: 30px 22px;
-    }
-
-    .cta-actions {
-        flex-direction: column;
-    }
-}
+ 
